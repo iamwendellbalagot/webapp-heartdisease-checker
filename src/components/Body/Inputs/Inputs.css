@@ -1,0 +1,28 @@
+.Container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.subContainer1{
+    display: inline;
+}
+
+.subContainer2{
+    display: inline;
+}
+
+.labels {
+    display:flex;
+    margin-top: 16.5px;
+}
+
+.Inputs {
+    display: flex;
+    width: 200px;
+    height: 19px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
