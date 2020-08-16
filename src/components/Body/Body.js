@@ -10,13 +10,13 @@ const body = (props) =>{
     // })
     return(
         <React.Fragment>
-            <h2 >Form Body</h2>
             <div className = {classes.Body}>
                 <form className = {classes.Form}>
                     <Inputs keys = {props.keys} changed = {props.changed}/>
                     <Submission 
                     clicked = {props.clicked} 
-                    prediction = {props.prediction}/>
+                    prediction = {props.prediction}
+                    disabled = {props.disabled}/>
                 </form>
             </div>
         </React.Fragment>

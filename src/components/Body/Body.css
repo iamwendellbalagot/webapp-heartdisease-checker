@@ -4,7 +4,7 @@
     margin-left: auto;
     align-items: center;
     margin: 0 150px 0 150px;
-
+    height: 100%;
 }
 
 .Form {
@@ -17,4 +17,7 @@
     border-style: none solid;
     border-width: 1px;
     border-color: gray;
+    height: 100%;
+    padding-bottom: 50px;
+    padding-top: 40px;
 }

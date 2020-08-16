@@ -1,38 +1,68 @@
 .Submission {
     text-align: center;
     position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 40px;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
 }
 
+.Submission iframe {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    clip-path:circle(150px at 230px 190px);
+    position: absolute;
+    right: -70px;
+    top: -20px;
+}
+
+.warn {
+    padding: 0px;
+}
+
+.gif{
+    display: flex;
+    height: 350px;
+    width: 0px;
+}
+
 .myButton {
-    position: relative;
-    box-shadow: inset 0px 1px 3px 0px #91b8b3;
-    background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-    background-color: #768d87;
-    border-radius: 6px;
-    border: 1px solid #566963;
+    background: linear-gradient(to bottom, #1b1c25 5%, #222929 100%);
+    background-color: #1b1c25;
+    border-radius: 5px;
+    border: 1px solid #1b1c25;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
-    font-size: 19px;
-    font-weight: bold;
-    padding: 15px 37px;
+    font-size: 18px;
+    font-weight: 5  00;
+    padding: 15px 40px;
     text-decoration: none;
-    text-shadow: 0px -1px 0px #2b665e;
+    text-shadow: 0px -1px 0px #1b1c25;
+}
+
+.disabled {
+    background-color: #86868b;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: default;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 5 00;
+    padding: 15px 40px;
+    text-decoration: none;
 }
 
 .myButton:hover {
-    background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-    background-color: #6c7c7c;
+    background: linear-gradient(to bottom, #222929 5%, #1b1c25 100%);
+    background-color: #323d3d;
 }
 
 .myButton:active {
     position: relative;
     top: 1px;
 }
+

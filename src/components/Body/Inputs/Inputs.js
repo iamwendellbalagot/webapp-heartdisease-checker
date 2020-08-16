@@ -18,9 +18,12 @@ const inputs = (props) =>{
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[10]} placeholder = {props.keys[10]}/></span>
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[11]} placeholder = {props.keys[11]}/></span>
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[12]} placeholder = {props.keys[12]}/></span> */}
+                <p>Check the attributes informaton.</p>
                 <div className={classes.subContainer2}>
                     {props.keys.map(feat =>(
-                        <span className = {classes.labels}>{feat}</span>
+                        <span 
+                        className = {classes.labels}
+                        key = {feat + '1'}>{feat}</span>
                     ))}
                 </div>
                 
@@ -31,7 +34,8 @@ const inputs = (props) =>{
                         name = {feat}
                         className = {classes.Inputs}
                         placeholder = {feat} 
-                        onChange = {props.changed}/>
+                        onChange = {props.changed}
+                        key = {feat +'2'}/>
                     ))}
                 </div>
 
