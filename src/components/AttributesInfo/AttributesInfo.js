@@ -9,8 +9,8 @@ const attributesInfo = (props) =>{
                 <div className = {classes.AttributesInfo}>
                 <h3>Attributes Information.</h3>
                     <ul>
-                        <li>age</li>
-                        <li>sex (input 1 if male otherwise 0)</li>
+                        <li>age: The person's age in years.</li>
+                        <li>sex: (input 1 if male otherwise 0)</li>
                         <li>cp : Chest pain type (4 values)</li>
                         <li>trestbps : Resting blood pressure</li>
                         <li>chol : Serum cholestoral in mg/dl</li>

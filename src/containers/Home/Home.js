@@ -39,7 +39,16 @@ class Home extends Component {
     componentDidUpdate(){
     }
     componentDidMount(){
-        console.log('DID MOUNT')
+        console.log('[DID MOUNT] components')
+    }
+
+    shouldComponentUpdate(nextProps, nextState){
+        if (this.props.location.pathname === nextProps.location.pathname) {
+            return true
+        }
+        else{           
+             return false;
+        }
     }
 
     formsHandler = (event) => {
@@ -63,7 +72,6 @@ class Home extends Component {
         }));
         axios.post('/testapi', this.state.params)
              .then(res =>{
-                console.log(res.data.probability)
                 setTimeout(() =>{
                     this.setState(prevState => ({
                         prob: res.data.probability,
@@ -72,14 +80,12 @@ class Home extends Component {
                 }, 1000)
 
                 if (res.data.prediction === 'No'){
-                    console.log("You Don't Have Heart Disease.")
                     this.setState(prevState =>({
                         prediction: "You don't have a heart disease."
                     }))
 
                 }
                 else{
-                    console.log('You Have a Heart Disease.')
                     this.setState(prevState => ({
                         prediction: "You have a heart disease."
                     }))

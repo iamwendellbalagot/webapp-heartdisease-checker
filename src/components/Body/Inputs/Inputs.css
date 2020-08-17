@@ -9,6 +9,7 @@
 
 .subContainer1{
     display: inline;
+    margin-top: 10px;
 }
 
 .subContainer2{
@@ -17,7 +18,7 @@
 
 .labels {
     display:flex;
-    margin-top: 16.5px;
+    margin-top: 16px;
 }
 
 .Inputs {

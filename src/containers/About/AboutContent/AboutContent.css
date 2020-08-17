@@ -1,0 +1,48 @@
+.Container{
+    display: flex;
+    margin: 0 150px 0 150px;
+    height: 100%;
+}
+
+.AboutContent {
+    position: relative;
+    display: flexbox;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    border-style: none solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 1300px;
+    width: 800px;
+    padding: 0 20px 30px 20px;
+    
+}
+
+.AboutContent h4 {
+    margin: 10px 0 10px 0;
+}
+
+.AboutContent h3{
+    display: flex;
+    display:default;
+    z-index: -100;
+    text-decoration: underline;
+}
+
+.AboutContent p{
+    margin:0;
+}
+
+.csr{
+    position: flex;
+    display: block;
+    margin-top: 15px;
+}
+
+.roc{
+    position: flex;
+    display: block;
+    margin: 15px 0 15px 0;
+}
+

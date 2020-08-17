@@ -21,9 +21,9 @@ const inputs = (props) =>{
                 <p onClick = {props.clicked}>Check the attributes information.</p>
                 <div className={classes.subContainer2}>
                     {props.keys.map(feat =>(
-                        <span 
+                        <label 
                         className = {classes.labels}
-                        key = {feat + '1'}>{feat}</span>
+                        key = {feat + '1'}>{feat}</label>
                     ))}
                 </div>
                 

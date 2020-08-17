@@ -7,8 +7,12 @@ const toolbar =(props) =>(
     <React.Fragment>
     <ul className = {classes.Toolbar}>
         <Logo />
-        <li><NavLink to= '/developer'  activeClassName = 'active'>Developer</NavLink></li>
-        <li><NavLink to= '/about' activeClassName = 'active'>About</NavLink></li>
+        <li><a target = '_blank' href = {'https://github.com/iamwendellbalagot'}>Developer</a></li>
+        <li><NavLink to= {{
+            pathname: '/about',
+            hash:'submit',
+            search: 'quick-submit=true?'
+        }} >About</NavLink></li>
         <li><NavLink to= '/' activeClassName = 'active'>Home</NavLink></li>
     </ul>
     </React.Fragment>

@@ -4,7 +4,7 @@ import heart from '../../../assets/heart.gif';
 
 const submission = (props) =>{
     let warn =  <p className = {classes.warn}>Please fill up the form before submmiting.</p>;
-    let submit = <p className = {classes.warn}>Click submit to get a result.</p>;
+    let submit = <p className = {classes.warn}>Click the submit button to get a result.</p>;
     let enabledButton = <button disabled = {false} className = {classes.myButton} onClick = {props.clicked}>Submit</button>
     let disabledButton = <button disabled = {true} className = {classes.disabled} onClick = {props.clicked}>Submit</button>
 
