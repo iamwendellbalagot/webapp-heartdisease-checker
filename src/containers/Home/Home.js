@@ -7,6 +7,7 @@ import classes from './Home.css';
 import Backdrop from '../../components/Backdrop/Backdrop';
 import Modal from '../../components/Modal/Modal';
 import Result from '../../components/Modal/Result/Result';
+import AttributesInfo from '../../components/AttributesInfo/AttributesInfo';
 
 class Home extends Component {
 
@@ -29,7 +30,8 @@ class Home extends Component {
         prediction:null,
         prob:null,
         submit: false,
-        showSpinner:false
+        showSpinner:false,
+        showAttributes: false
     }
 
     KEYS = ["age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"];
@@ -39,15 +41,6 @@ class Home extends Component {
     componentDidMount(){
         console.log('DID MOUNT')
     }
-
-    // checkParams = () =>{
-    //     for (let feat in this.state.params) {
-    //         if (this.state.params[feat] === null) {
-                
-    //             break;
-    //         }
-    //     }
-    // }
 
     formsHandler = (event) => {
         let name = event.target.name;
@@ -99,7 +92,14 @@ class Home extends Component {
 
     backdropHandler = () =>{
         this.setState(prevState =>({
-            submit:false
+            submit:false,
+            showAttributes:false
+        }))
+    }
+
+    attributesHandler = () =>{
+        this.setState(prevState =>({
+            showAttributes:true
         }))
     }
 
@@ -113,6 +113,10 @@ class Home extends Component {
                     <Backdrop 
                     show = {this.state.submit}
                     clicked = {this.backdropHandler}/>
+                    <Backdrop 
+                    show = {this.state.showAttributes}
+                    clicked = {this.backdropHandler}
+                    />
 
                     <Modal show = {this.state.submit}>
                         <Result 
@@ -126,7 +130,10 @@ class Home extends Component {
                     changed = {this.formsHandler} 
                     keys = {this.KEYS}
                     clicked = {this.submissionHandler} 
-                    disabled = {res}/>
+                    disabled = {res}
+                    showAttributes = {this.attributesHandler}/>
+
+                    {this.state.showAttributes?<AttributesInfo show = {this.state.showAttributes}/> : null}    
                     <Footer />
                 </div>
             </React.Fragment>

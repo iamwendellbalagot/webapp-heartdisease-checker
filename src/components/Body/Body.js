@@ -12,7 +12,10 @@ const body = (props) =>{
         <React.Fragment>
             <div className = {classes.Body}>
                 <form className = {classes.Form}>
-                    <Inputs keys = {props.keys} changed = {props.changed}/>
+                    <Inputs 
+                    keys = {props.keys} 
+                    changed = {props.changed}
+                    clicked = {props.showAttributes}/>
                     <Submission 
                     clicked = {props.clicked} 
                     disabled = {props.disabled}/>
