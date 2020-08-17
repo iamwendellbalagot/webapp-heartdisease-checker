@@ -6,13 +6,6 @@
     padding-left: 100px;
 }
 
-.Container p {
-    position: absolute;
-    display: block;
-    top: 0px;
-    font-size: 18px;
-    text-decoration: underline;
-}
 
 .subContainer1{
     display: inline;
@@ -33,4 +26,18 @@
     height: 19px;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.Container p {
+    position: absolute;
+    display: block;
+    top: 0px;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Container p:hover{
+    color: #30397a;
+    font-weight: 700;
 }

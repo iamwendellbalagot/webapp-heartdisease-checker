@@ -1,0 +1,27 @@
+.Result {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.Result p {
+    margin:0px;
+}
+
+.Result h4 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.Result img{
+    height: 100px;
+    margin-bottom: 10px;
+    mix-blend-mode: difference;
+    border-radius: 100%;
+}
+
+.wait{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}

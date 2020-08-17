@@ -28,7 +28,8 @@ class Home extends Component {
 
         prediction:null,
         prob:null,
-        submit: false
+        submit: false,
+        showSpinner:false
     }
 
     KEYS = ["age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"];
@@ -64,14 +65,18 @@ class Home extends Component {
     submissionHandler = (event) =>{
         event.preventDefault();
         this.setState(prevState =>({
-            submit:true
+            submit:true,
+            showSpinner:true
         }));
         axios.post('/testapi', this.state.params)
              .then(res =>{
                 console.log(res.data.probability)
-                this.setState(prevState =>({
-                    prob: res.data.probability
-                }));
+                setTimeout(() =>{
+                    this.setState(prevState => ({
+                        prob: res.data.probability,
+                        showSpinner: false
+                    }));
+                }, 1000)
 
                 if (res.data.prediction === 'No'){
                     console.log("You Don't Have Heart Disease.")
@@ -112,7 +117,8 @@ class Home extends Component {
                     <Modal show = {this.state.submit}>
                         <Result 
                         probability = {this.state.prob}
-                        prediction = {this.state.prediction}/>
+                        prediction = {this.state.prediction}
+                        showSpinner = {this.state.showSpinner}/>
                     </Modal>
 
                     <Navigation />
@@ -120,7 +126,6 @@ class Home extends Component {
                     changed = {this.formsHandler} 
                     keys = {this.KEYS}
                     clicked = {this.submissionHandler} 
-                    prediction = {this.state.prediction}
                     disabled = {res}/>
                     <Footer />
                 </div>

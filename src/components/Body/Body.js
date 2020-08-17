@@ -15,7 +15,6 @@ const body = (props) =>{
                     <Inputs keys = {props.keys} changed = {props.changed}/>
                     <Submission 
                     clicked = {props.clicked} 
-                    prediction = {props.prediction}
                     disabled = {props.disabled}/>
                 </form>
             </div>

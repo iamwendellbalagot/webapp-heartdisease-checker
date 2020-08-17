@@ -7,8 +7,8 @@ const toolbar =(props) =>(
     <React.Fragment>
     <ul className = {classes.Toolbar}>
         <Logo />
-        <li><NavLink to= '/'  activeClassName = 'active'>Developer</NavLink></li>
-        <li><NavLink to= '/' activeClassName = 'active'>About</NavLink></li>
+        <li><NavLink to= '/developer'  activeClassName = 'active'>Developer</NavLink></li>
+        <li><NavLink to= '/about' activeClassName = 'active'>About</NavLink></li>
         <li><NavLink to= '/' activeClassName = 'active'>Home</NavLink></li>
     </ul>
     </React.Fragment>
