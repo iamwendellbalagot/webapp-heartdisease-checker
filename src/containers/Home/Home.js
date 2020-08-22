@@ -8,6 +8,7 @@ import Backdrop from '../../components/Backdrop/Backdrop';
 import Modal from '../../components/Modal/Modal';
 import Result from '../../components/Modal/Result/Result';
 import AttributesInfo from '../../components/AttributesInfo/AttributesInfo';
+import Nothingness from '../../components/Nothingness/Nothingness';
 
 class Home extends Component {
 
@@ -139,7 +140,10 @@ class Home extends Component {
                     disabled = {res}
                     showAttributes = {this.attributesHandler}/>
 
-                    {this.state.showAttributes?<AttributesInfo show = {this.state.showAttributes}/> : null}    
+                    {this.state.showAttributes?<AttributesInfo show = {this.state.showAttributes}/> : null}  
+                    <div className={classes.notice}>
+                        <Nothingness />
+                    </div>  
                     <Footer />
                 </div>
             </React.Fragment>

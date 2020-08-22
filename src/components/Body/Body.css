@@ -1,23 +1,39 @@
 .Body {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    position: relative;
     align-items: center;
     margin: 0 150px 0 150px;
-    height: 100%;
+    height: 85vh;
 }
 
 .Form {
-    position: relative;
+    position: absolute;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
     padding: 0px;
-    border-style: none solid;
-    border-width: 1px;
-    border-color: gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
     height: 100%;
-    padding-bottom: 50px;
-    padding-top: 40px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width:480px) and (max-width:1079px){
+    .Body{
+        margin: 0 50px 0px 50px;
+        height: 700px;
+    }
+    .Form{
+        display: block;
+    }
+
+}
+
+@media (min-width:0px) and (max-width:479px){
+    .Body{
+        display: none;
+    }
 }

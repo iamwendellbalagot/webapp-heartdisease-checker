@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Inputs.css';
 
 const inputs = (props) =>{
+
     return(
         <React.Fragment>
             <div className = {classes.Container}>
@@ -18,7 +19,7 @@ const inputs = (props) =>{
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[10]} placeholder = {props.keys[10]}/></span>
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[11]} placeholder = {props.keys[11]}/></span>
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[12]} placeholder = {props.keys[12]}/></span> */}
-                <p onClick = {props.clicked}>Check the attributes information.</p>
+                <p onClick = {props.showInfo}>Check the attributes information.</p>
                 <div className={classes.subContainer2}>
                     {props.keys.map(feat =>(
                         <label 
@@ -38,9 +39,9 @@ const inputs = (props) =>{
                         key = {feat +'2'}/>
                     ))}
                 </div>
-
-
             </div>
+            
+
         </React.Fragment>
     );
 };

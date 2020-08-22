@@ -11,7 +11,7 @@ const submission = (props) =>{
     return(
         <div className = {classes.Submission}>
             <div className = {classes.gif}>
-            < iframe src = {heart} scrolling = 'no' title='gif'/>
+                < iframe src = {heart} scrolling = 'no' title='gif'/>
             </div> 
             {props.disabled? submit : warn}
             {props.disabled? enabledButton : disabledButton}

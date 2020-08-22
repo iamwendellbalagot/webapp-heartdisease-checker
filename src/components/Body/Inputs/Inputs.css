@@ -8,12 +8,12 @@
 
 
 .subContainer1{
-    display: inline;
+    display: block;
     margin-top: 10px;
-}
+    }
 
 .subContainer2{
-    display: inline;
+    display: block;
 }
 
 .labels {
@@ -23,7 +23,7 @@
 
 .Inputs {
     display: flex;
-    width: 200px;
+    width: 100%;
     height: 19px;
     margin-top: 10px;
     margin-left: 20px;
@@ -34,6 +34,8 @@
     display: block;
     top: 0px;
     font-size: 18px;
+    margin-bottom: 0;
+    width: 300px;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -41,4 +43,48 @@
 .Container p:hover{
     color: #30397a;
     font-weight: 700;
+}
+
+.btnContainer{
+    display: flex;
+}
+
+
+@media (min-width:0px) and (max-width:1079px){
+    .Container{
+        position: absolute;
+        margin: 0 auto 0 auto;
+        left: 10%;
+        right: 0;
+        top: 70px;
+        padding: 0 0 0px 0;
+    }
+
+    .subContainer2{
+        width: 50%;
+    }
+
+    .Container p {
+        top: -50px;
+    }
+
+    .subContainer2{
+        width: 100px;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:1079px){
+    .Container {
+        left: 13%;
+    }
+
+    .Inputs{
+        width: 150%;
+    }
+
+    .subContainer1{
+        margin-right: 50px;
+        
+    }
 }

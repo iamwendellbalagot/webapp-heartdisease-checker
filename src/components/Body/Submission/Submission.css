@@ -7,6 +7,7 @@
     margin-right: auto;
     margin-left: auto;
     align-items: center;
+    border-left: 1px solid grey;
 }
 
 .Submission iframe {
@@ -64,5 +65,17 @@
 .myButton:active {
     position: relative;
     top: 1px;
+}
+
+@media (min-width:0px) and (max-width:1079px){
+    .Submission {
+        display: none;
+    }
+}
+
+@media (min-width:0) and (max-width:1150px) {
+    .Submission {
+        border-left: none;
+    }
 }
 
