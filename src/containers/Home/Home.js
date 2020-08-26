@@ -11,7 +11,8 @@ import AttributesInfo from '../../components/AttributesInfo/AttributesInfo';
 import Nothingness from '../../components/Nothingness/Nothingness';
 
 class Home extends Component {
-
+	
+	//states
     state = {
         params:{
         age: null,
