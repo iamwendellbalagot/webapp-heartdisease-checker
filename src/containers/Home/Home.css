@@ -1,14 +1,17 @@
 .Container {
-    background-color: #ffffff;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.notice{
-    display: none;
+.notice {
+  display: none;
 }
 
-@media (min-width:0) and (max-width:479px){
-    .notice{
-        display: flex;
-        height: 85vh;
-    }
+@media (min-width: 0) and (max-width: 479px) {
+  .notice {
+    display: flex;
+    height: 85vh;
+  }
 }

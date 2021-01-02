@@ -1,81 +1,80 @@
 .Submission {
-    text-align: center;
-    position: relative;
-    padding-left: 70px;
-    padding-right: 40px;
-    width: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    border-left: 1px solid grey;
+  text-align: center;
+  position: relative;
+  padding-left: 70px;
+  padding-right: 40px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  border-left: 1px solid grey;
 }
 
 .Submission iframe {
-    height: 500px;
-    width: 500px;
-    overflow: hidden;
-    clip-path:circle(150px at 230px 190px);
-    position: absolute;
-    right: -70px;
-    top: -20px;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  clip-path: circle(150px at 230px 190px);
+  position: absolute;
+  right: -70px;
+  top: -20px;
 }
 
 .warn {
-    padding: 0px;
+  padding: 0px;
 }
 
-.gif{
-    display: flex;
-    height: 350px;
-    width: 0px;
+.gif {
+  display: flex;
+  height: 350px;
+  width: 0px;
 }
 
 .myButton {
-    background: linear-gradient(to bottom, #1b1c25 5%, #222929 100%);
-    background-color: #1b1c25;
-    border-radius: 5px;
-    border: 1px solid #1b1c25;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 5  00;
-    padding: 15px 40px;
-    text-decoration: none;
-    text-shadow: 0px -1px 0px #1b1c25;
+  background: linear-gradient(to bottom, #1b1c25 5%, #222929 100%);
+  background-color: #1b1c25;
+  border-radius: 5px;
+  border: 1px solid #1b1c25;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 5 00;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #1b1c25;
 }
 
 .disabled {
-    background-color: #86868b;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: default;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 5 00;
-    padding: 15px 40px;
-    text-decoration: none;
+  background-color: #86868b;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: default;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 5 00;
+  padding: 15px 40px;
+  text-decoration: none;
 }
 
 .myButton:hover {
-    background: linear-gradient(to bottom, #222929 5%, #1b1c25 100%);
-    background-color: #323d3d;
+  background: linear-gradient(to bottom, #222929 5%, #1b1c25 100%);
+  background-color: #323d3d;
 }
 
 .myButton:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
-@media (min-width:0px) and (max-width:1079px){
-    .Submission {
-        display: none;
-    }
+@media (min-width: 0px) and (max-width: 1079px) {
+  .Submission {
+    display: none;
+  }
 }
 
-@media (min-width:0) and (max-width:1150px) {
-    .Submission {
-        border-left: none;
-    }
+@media (min-width: 0) and (max-width: 1150px) {
+  .Submission {
+    border-left: none;
+  }
 }
-

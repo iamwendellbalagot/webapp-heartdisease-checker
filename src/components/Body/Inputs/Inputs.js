@@ -20,23 +20,26 @@ const inputs = (props) =>{
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[11]} placeholder = {props.keys[11]}/></span>
                 <span><input onChange = {props.changed} className = {classes.Inputs} type='text' name = {props.keys[12]} placeholder = {props.keys[12]}/></span> */}
                 <p onClick = {props.showInfo}>Check the attributes information.</p>
-                <div className={classes.subContainer2}>
+                {/* <div className={classes.subContainer2}>
                     {props.keys.map(feat =>(
                         <label 
                         className = {classes.labels}
                         key = {feat + '1'}>{feat}</label>
                     ))}
-                </div>
+                </div> */}
                 
                 <div className={classes.subContainer1}>
-                    {props.keys.map(feat =>(
-                        <input 
-                        type = 'text'
-                        name = {feat}
-                        className = {classes.Inputs}
-                        placeholder = {feat} 
-                        onChange = {props.changed}
-                        key = {feat +'2'}/>
+                    {props.keys.map((feat, idx) =>(
+                        <div className={classes.inputContainer}  key = {feat +'2'}>
+                            <span>{feat}</span>
+                            <input 
+                                type = 'text'
+                                name = {feat}
+                                className = {classes.Inputs}
+                                placeholder = {feat} 
+                                onChange = {props.changed}
+                               />
+                        </div>
                     ))}
                 </div>
             </div>

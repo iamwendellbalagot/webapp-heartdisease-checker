@@ -1,39 +1,40 @@
 .Body {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin: 0 150px 0 150px;
-    height: 85vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0 150px 0 150px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .Form {
-    position: absolute;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    padding: 0px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
+  position: absolute;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding: 0px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
-@media (min-width:480px) and (max-width:1079px){
-    .Body{
-        margin: 0 50px 0px 50px;
-        height: 700px;
-    }
-    .Form{
-        display: block;
-    }
-
+@media (min-width: 480px) and (max-width: 1079px) {
+  .Body {
+    margin: 0 50px 0px 50px;
+    height: 700px;
+  }
+  .Form {
+    display: block;
+  }
 }
 
-@media (min-width:0px) and (max-width:479px){
-    .Body{
-        display: none;
-    }
+@media (min-width: 0px) and (max-width: 479px) {
+  .Body {
+    display: none;
+  }
 }

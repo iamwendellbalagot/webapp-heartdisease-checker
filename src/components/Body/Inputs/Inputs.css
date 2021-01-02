@@ -1,90 +1,104 @@
 .Container {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    padding-left: 100px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-left: 100px;
 }
 
+.subContainer1 {
+  display: block;
+  margin-top: 10px;
+}
 
-.subContainer1{
-    display: block;
-    margin-top: 10px;
-    }
+.subContainer2 {
+  display: flex;
+}
 
-.subContainer2{
-    display: block;
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.inputContainer > span {
+  width: 120px;
 }
 
 .labels {
-    display:flex;
-    margin-top: 16px;
+  display: flex;
+  margin-top: 16px;
 }
 
 .Inputs {
-    display: flex;
-    width: 100%;
-    height: 19px;
-    margin-top: 10px;
-    margin-left: 20px;
+  width: 100%;
+  height: 19px;
 }
 
 .Container p {
+  position: absolute;
+  display: block;
+  top: 0px;
+  font-size: 18px;
+  margin-bottom: 0;
+  width: 300px;
+
+  cursor: pointer;
+}
+
+.Container p:hover {
+  color: #30397a;
+  transition: all 300ms;
+  text-decoration: underline;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 1079px) {
+  .Container {
     position: absolute;
-    display: block;
-    top: 0px;
-    font-size: 18px;
-    margin-bottom: 0;
-    width: 300px;
-    text-decoration: underline;
-    cursor: pointer;
+    margin: 0 auto 0 auto;
+    left: 10%;
+    right: 0;
+    top: 70px;
+    padding: 0 0 0px 0;
+  }
+
+  .subContainer2 {
+    width: 50%;
+  }
+
+  .Container p {
+    top: -50px;
+  }
+
+  .subContainer2 {
+    width: 100px;
+  }
 }
 
-.Container p:hover{
-    color: #30397a;
-    font-weight: 700;
-}
+@media (min-width: 600px) and (max-width: 1079px) {
+  .Container {
+    justify-content: center;
+  }
 
-.btnContainer{
-    display: flex;
-}
+  .inputContainer > span {
+    width: 250px;
+  }
 
+  .Inputs {
+    width: 220%;
+    padding: 0 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 80px;
+  }
 
-@media (min-width:0px) and (max-width:1079px){
-    .Container{
-        position: absolute;
-        margin: 0 auto 0 auto;
-        left: 10%;
-        right: 0;
-        top: 70px;
-        padding: 0 0 0px 0;
-    }
-
-    .subContainer2{
-        width: 50%;
-    }
-
-    .Container p {
-        top: -50px;
-    }
-
-    .subContainer2{
-        width: 100px;
-    }
-}
-
-
-@media (min-width:600px) and (max-width:1079px){
-    .Container {
-        left: 13%;
-    }
-
-    .Inputs{
-        width: 150%;
-    }
-
-    .subContainer1{
-        margin-right: 50px;
-        
-    }
+  .subContainer1 {
+    margin-right: 50px;
+  }
 }
